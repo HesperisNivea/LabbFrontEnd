@@ -58,3 +58,25 @@ footer {
     color: #F9FAF7;
 }
 
+.om-oss {
+    background-color:#A0462A;
+    font-size: 4rem;
+    color: #F9FAF7;
+}
+
+#contact-info {
+    background-image: url('../Images/luisa-brimble-2RrBE90w0T8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height: 500px;
+}
+
+#address ul li {
+    font-size: 1rem;
+text-align: center;
+}
+
+#address h5 {
+    font-size: 2rem;
+    text-align: center;
+}

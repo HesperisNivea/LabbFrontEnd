@@ -9,55 +9,64 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../css/OmOss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-2">
+        <div class="container-md">
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
           <a class="navbar-brand" href="./index.html">
             <img
               src="../Images/salad-svgrepo-com.svg"
               alt="Logo"
-              width="30"
-              height="32"
-              class="d-inline-block align-text-bottom"
+              width="50"
+              height="62"
+              class="d-inline-block me-3"
             />
-            Lundens Salladsbar
+            <span class="brand-font align-bottom">Lundens Salladsbar</span>
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav d-inline-flex">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Hem</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./omOss.html">Om oss</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Buy.html">Bästell online</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link d-flex align-items-center">
-                  <img
-                    src="../Images/basket-shopping-basket-svgrepo-com.svg"
-                    alt="Logo"
-                    width="30"
-                    height="28"
-                    class="d-flex align-text-top"
-                  />
-              </li>
-            </ul>
+            <div class=" d-inline-flex justify-content-end collapse navbar-collapse" >
+              <ul class="navbar-nav fs-5">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Hem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./omOss.html">Om oss</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./Buy.html">Bästell online</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link d-flex">
+                    <img
+                      src="../Images/basket-shopping-basket-svgrepo-com.svg"
+                      alt="Logo"
+                      width="32"
+                      height="30"
+                      class="d-flex align-text-top"
+                    />
+                </li>
+              </ul>
+            </div>
           </div>
           </a>
         </div>
@@ -66,6 +75,44 @@
     <main>
       <div class=></div>
     </main>
+    <footer class="mt-3">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-xl-3 py-4 px-5">
+        <div class="col-2 mb-3 px-4">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="../Images/salad-svgrepo-com-white.svg"
+              alt="Logo"
+              width="50"
+              height="62"
+              class="d-inline-block me-3"
+            />
+            <span class="footer-brand-logo align-bottom">Lundens Salladsbar</span>
+          </a>
+        </div>
+        
+        <div class="col mb-3 ps-5">
+          <h5 class="text-light">Kontakt</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Nobelplatsen 5,</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">416 57 Göteborg</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">033-33 32 33</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">lundens.salladsbar@sallad.se</a></li>
+          </ul>
+        </div>
+      
+        <div class="col mb-3 ps-5">
+          <h5 class="align-text-center">Öppetider:</h5>
+          <ul class="nav flex-column text-">
+            <li class="nav-item"><span class="nav-link p-0 text-light mb-2">Mon - Tors : 10:00 - 18:00</span></li>
+            <li class="nav-item"><span class="nav-link p-0 text-light mb-2"> Fre - Lör : 11:00 - 22:00</span></li>
+            <li class="nav-item"><span  class="nav-link p-0 text-light mb-2"> Söndag : Stängt!</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col border-top me-5 ms-5">
+        <p class="text-light text-center py-2 pb-3">Copyrigth © 2024</p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

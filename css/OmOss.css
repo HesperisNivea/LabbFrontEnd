@@ -32,7 +32,7 @@ height: 100vh;
 }
 
 .main-button {
-    background-color: rgb(163, 183, 84);
+    background-color: #A3B754;
     font-weight: 500;
     color: #f9faf7;
 }
@@ -58,7 +58,3 @@ footer {
     color: #F9FAF7;
 }
 
-nav div div ul li a:hover {
-    background-color: rgb(163, 183, 84,0.4);
-    
-}

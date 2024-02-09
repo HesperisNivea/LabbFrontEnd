@@ -50,8 +50,8 @@ for (const salad of saladList) {
   </div>`
 }
 
-
-for (const salad of saladList) {
+const ex = []
+for (const salad of ex) {
     mainDiv.appendChild(div1);
     div1.appendChild(div2);
     img.src = salad.img;

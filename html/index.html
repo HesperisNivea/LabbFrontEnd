@@ -10,62 +10,89 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-md bg-body-tertiary py-2">
+        <div class="container-md">
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
           <a class="navbar-brand" href="./index.html">
             <img
               src="../Images/salad-svgrepo-com.svg"
               alt="Logo"
-              width="30"
-              height="32"
-              class="d-inline-block align-text-bottom"
+              width="50"
+              height="62"
+              class="d-inline-block me-3"
             />
-            Lundens Salladsbar
+            <span class="brand-font align-bottom">Lundens Salladsbar</span>
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav d-inline-flex">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Hem</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Om oss</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Buy.html">Bästell online</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link d-flex align-items-center">
-                  <img
-                    src="../Images/basket-shopping-basket-svgrepo-com.svg"
-                    alt="Logo"
-                    width="30"
-                    height="28"
-                    class="d-flex align-text-top"
-                  />
-              </li>
-            </ul>
+            <div class=" d-inline-flex justify-content-end collapse navbar-collapse" >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Hem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./omOss.html">Om oss</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./Buy.html">Bästell online</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link d-flex align-items-center">
+                    <img
+                      src="../Images/basket-shopping-basket-svgrepo-com.svg"
+                      alt="Logo"
+                      width="30"
+                      height="28"
+                      class="d-flex align-text-top"
+                    />
+                </li>
+              </ul>
+            </div>
           </div>
           </a>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div id="main-message" class="container-fluid">
+        <div class="d-flex justify-content-center d-flex">
+          <div class="welcome box d-grid">
+            <h1 class="row justify-content-center">Hello, world!</h1>
+            <p class="row pad text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel obcaecati fugiat, magnam sed adipisci tempore expedita dolore, sequi magni corrupti facere ratione!</p>
+            <a href="../html/Buy.html" class="btn main-button row remove-opacity">Button</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid footer-design d-flex">
+        <div class="row">
+          <p class="py-4 px-3 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, consequuntur, veniam a explicabo blanditiis, nihil eum quo atque consequatur quibusdam accusantium illo delectus ex sequi dicta voluptatem similique expedita possimus.</p>
+        </div>
+        <div class="row">
+          <p class="py-4 px-3 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, consequuntur, veniam a explicabo blanditiis, nihil eum quo atque consequatur quibusdam accusantium illo delectus ex sequi dicta voluptatem similique expedita possimus.</p>
+        </div>
+        <div class="row">
+          <p class="py-4 px-3 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, consequuntur, veniam a explicabo blanditiis, nihil eum quo atque consequatur quibusdam accusantium illo delectus ex sequi dicta voluptatem similique expedita possimus.</p>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

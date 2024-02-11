@@ -59,16 +59,21 @@ footer {
 }
 
 .om-oss {
-    background-color:#A0462A;
+    background-color:rgb(163, 183, 84);
     font-size: 4rem;
     color: #F9FAF7;
 }
 
-#contact-info {
-    background-image: url('../Images/luisa-brimble-2RrBE90w0T8-unsplash.jpg');
+#contact-info-pic {
+    background-image: url('../Images/luisa-brimble-2RrBE90w0T8-unsplash\ copy.jpg');
     background-repeat: no-repeat;
-    background-size:cover ;
-    height: 500px;
+    background-size:cover;
+    width: 100%;
+    min-height: 350px;
+    height: 100%;
+    
+    
+    
 }
 
 #address ul li {
@@ -79,4 +84,9 @@ text-align: center;
 #address h5 {
     font-size: 2rem;
     text-align: center;
+}
+
+.map-border{
+    border: 3px solid;
+    border-color: rgb(163, 183, 84, 0.5);
 }

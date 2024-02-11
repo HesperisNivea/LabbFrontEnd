@@ -20,7 +20,6 @@
     background-image: url('../Images/luisa-brimble-2RrBE90w0T8-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
 }
 
 .welcome {
@@ -29,6 +28,7 @@ justify-content: center;
 align-items: center;
 row-gap: 5px;
 height: 100vh;
+
 }
 
 .main-button {

@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <script defer src="../script/Product.js" ></script>
+    <script defer src="../script/cart.js" async></script>
     <title>Document</title>
   </head>
   <body>
@@ -74,22 +75,21 @@
     </header>
     <main>
       <div class="container mt-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4" id="product-container">
-          <div class="col">
+        <div class="row row-cols-1 row-cols-md-3 g-4 shop-items" id="product-container">
+          <div class="col shop-item">
             <div class="card h-100">
-              <img src="../Images/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" class="card-img-top" alt="salad" />
+              <img src="../Images/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" class="card-img-top shop-item-image" alt="salad" />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <div class="d-flex" style="justify-content: space-between;"> <!--remove style and add it to css file-->
+                  <h4 class="card-title shop-item-title">Sommarsalad</h4>
+                  <h5 class="card-title text-end shop-item-price">120 kr</h5>
+                </div>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
+                  <button class="btn btn-success shop-item-button">Add to cart</button>
               </div>
             </div>
           </div>
@@ -110,37 +110,17 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="../Images/eiliv-aceron-ILTMskYdGIM-unsplash.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div class="container">
         <div class="m-3 p-2">
-          <h3 class="col text-center p-3 border-bottom border-warning">Cart</h3>
-          <div class=""></div>
-              <div class="d-inline-flex container-fluid">
-                <p class="col-3">ItemName</p>
-                <p class="col">ItemCount</p>
-                <p class="col">ItemPrice</p>
-                <button class="col btn btn-primary">Remove</button>
+          <h3 class="col cart-items text-center p-3 border-bottom border-warning">Cart</h3>
+              <div class="cart-row d-inline-flex container-fluid border-bottom border-warning p-2">
+                <span class="col cart-item">ItemNamekfggs;ldg</span>
+                <input class="col cart-quantity">ItemCount</input>
+                <span class="col">ItemPrice</span>
+                <button class="col btn btn-success cart-button">Remove</button>
               </div>
-
               <div>
                 <h4 class="text-end pe-5">Suma</h4>
               </div>
@@ -161,7 +141,6 @@
             <span class="footer-brand-logo align-bottom">Lundens Salladsbar</span>
           </a>
         </div>
-        
         <div class="col mb-3 ps-5">
           <h5 class="text-light">Kontakt</h5>
           <ul class="nav flex-column">

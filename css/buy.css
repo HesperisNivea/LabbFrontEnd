@@ -37,6 +37,27 @@ height: 100vh;
     color: #f9faf7;
 }
 
+.plus-btn {
+    background-color:#A3B754; 
+    border: 2px solid #A3B754; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    padding: 10px 20px; 
+    color: white; 
+    font-size: 16px; 
+}
+
+
+.minus-btn {
+    background-color:#A0462A; 
+    border: 2px solid #A0462A; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    padding: 10px 20px; 
+    color: white; 
+    font-size: 16px; 
+}
+
 .remove-opacity {
     opacity: 200%;
 }

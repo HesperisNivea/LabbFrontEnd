@@ -90,7 +90,7 @@
                     lead-in to additional content. This content is a little bit
                     longer.
                   </p>
-                    <button class="btn btn-success shop-item-button">Add to cart</button>
+                  <button class="btn btn-success shop-item-button">Add to cart</button>
                 </div>
               </div>
             </div>
@@ -117,23 +117,45 @@
       <section>
         <div class="container">
           <div class="m-3 p-2">
-            <h3 class="col cart-items text-center p-3 border-bottom border-warning">Cart</h3>
-                <div class="cart-row d-inline-flex container-fluid border-bottom border-warning p-2">
-                  <p class="col cart-item">Sommarsalad</p>
+            <h3 class="col text-center p-3 border-bottom border-warning">Cart</h3>
+            <ul class="cart-items list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="cart-row d-inline-flex container-fluid p-2">
+                  <p class="col cart-item-title mx-3">Sommarsalad</p>
                     <div class="col-md-3 col-lg-3 col-xl-3 d-flex mx-3">
                       <button class=" px-2 btn-success minus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                         <i class="fas fa-minus">-</i>
                       </button>
-                      <input id="form1 cart-quantity" min="0" name="quantity" value="1" type="number" class="form-control form-control-sm">
+                      <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control form-control-sm cart-quantity-input">
                       <button class=" px-2 btn-danger plus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                         <i class="fas fa-plus">+</i>
                       </button>
                   </div>
-                  <p class="col">140kr</p>
-                  <button class="col btn btn-success cart-button">Remove</button>
+                  <p class="col text-center mx-3 cart-item-price">140 kr</p>
+                  <button class="col btn btn-success cart-button mx-3">Remove</button>
                 </div>
-                <div>
-                  <h4 class="text-end pe-5">Suma</h4>
+              </li>
+              <li class="list-group-item">
+                <div class="cart-row d-inline-flex container-fluid p-2">
+                  <p class="col cart-item-title mx-3">Sommarsalad</p>
+                  <div class="col-md-3 col-lg-3 col-xl-3 d-flex mx-3">
+                    <button class=" px-2 btn-success minus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      <i class="fas fa-minus">-</i>
+                    </button>
+                    <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control form-control-sm cart-quantity-input">
+                    <button class=" px-2 btn-danger plus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      <i class="fas fa-plus">+</i>
+                    </button>
+                  </div>
+                  <p class="col text-center mx-3 cart-item-price">140kr</p>
+                  <button class="col btn btn-success cart-button mx-3">Remove</button>
+                </div>
+              </li>
+            </ul>
+                
+                <div class="d-flex p-3 justify-content-end">
+                  <h4 class="text-end pe-5">Total:</h4>
+                  <h4 class="cart-total-price"></h4>
                 </div>
           </div>
         </div>

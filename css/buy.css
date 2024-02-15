@@ -39,7 +39,7 @@ height: 100vh;
 
 .plus-btn {
     background-color:#A3B754; 
-    border: 2px solid #A3B754; 
+    border: 5px solid #A3B754; 
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px; 
     padding: 10px 20px; 
@@ -50,7 +50,7 @@ height: 100vh;
 
 .minus-btn {
     background-color:#A0462A; 
-    border: 2px solid #A0462A; 
+    border: 5px solid #A0462A; 
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px; 
     padding: 10px 20px; 

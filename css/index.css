@@ -4,7 +4,7 @@
 
 .box{
     width: 450px;
-    max-height: 320px;
+    max-height: 360px;
     background-color: rgba(248, 249, 250, 0.85);
     display: flex;
     flex-direction: row;
@@ -37,6 +37,25 @@ height: 100vh;
     color: #f9faf7;
 }
 
+@media screen and (max-width: 425px) {
+    span.brand-font{
+      font-size: 26px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    span.footer-brand-logo {
+    font-size: 26px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    div.footer-brand-logo-div {
+    padding: 0px;
+  }
+  }
+
+  footer-brand-logo-div 
 .remove-opacity {
     opacity: 200%;
 }

@@ -1,6 +1,9 @@
 if(document.readyState == 'loading') 
 {
-    document.addEventListener('DOMContentLoaded')
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('loading')
+        ready();
+    });
 }else {
     ready();
 }
@@ -56,9 +59,9 @@ function addNewItemToCart(title, price) {
 // add async to script in html
 function ready() {
     
-    var removeCartItemButton = document.getElementsByClassName('cart-button');
-    for (var i = 0; i< removeCartItemButton.length; i++) {
-        var button = removeCartItemButton[i];
+    var removeCartItemButtons = document.getElementsByClassName('cart-button');
+    for (var i = 0; i< removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i];
         button.addEventListener('click', removeCartItem)
     }   
 

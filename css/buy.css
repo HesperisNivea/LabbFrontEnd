@@ -31,6 +31,19 @@ row-gap: 5px;
 height: 100vh;
 }
 
+.food-category-title{
+    border-style: solid;
+    border-color: #A3B754;
+    border-width: 0 0 3px 0;
+} 
+
+.cart-title
+{
+    border-style: solid;
+    border-color: #A3B754;
+    border-width: 0 0 3px 0;
+}
+
 .main-button {
     background-color: #A3B754;
     font-weight: 500;

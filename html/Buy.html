@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <script defer src="../script/Product.js" async ></script>
+    <script defer src="../script/Product.js"  ></script>
     <script defer src="../script/cart.js" async></script>
     <title>Document</title>
   </head>
@@ -34,7 +34,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-          <a class="navbar-brand" href="../index.html">
+          <a class="navbar-brand" href="./index.html">
             <img
               src="../Images/salad-svgrepo-com.svg"
               alt="Logo"
@@ -74,8 +74,9 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section title="sallad-category-section">
         <div class="container mt-5">
+          <h2 class="food-category-title p-2">Sallader</h2>
           <div class="row row-cols-1 row-cols-md-3 g-4 shop-items" id="product-container">
             <div class="col shop-item">
               <div class="card h-100">
@@ -114,10 +115,52 @@
           </div>
         </div>
       </section>
+      <section title="smoothie-category-section">
+        <div class="container mt-5">
+          <h2 class="food-category-title p-2">Smoothies</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4 shop-items" id="product-container">
+            
+            <div class="col shop-item">
+              <div class="card h-100">
+                <img src="../Images/smoothies/arvid-skywalker-h6ccJcVHh20-unsplash.jpg" class="card-img-top shop-item-image" alt="salad" />
+                <div class="card-body">
+                  <div class="d-flex" style="justify-content: space-between;"> <!--remove style and add it to css file-->
+                    <h4 class="card-title shop-item-title">Sommarsalad</h4>
+                    <h5 class="card-title text-end shop-item-price">120 kr</h5>
+                  </div>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <button class="btn btn-success shop-item-button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col shop-item">
+              <div class="card h-100">
+                <img src="../Images/smoothies/arvid-skywalker-h6ccJcVHh20-unsplash.jpg" class="card-img-top shop-item-image" alt="salad" />
+                <div class="card-body">
+                  <div class="d-flex" style="justify-content: space-between;"> <!--remove style and add it to css file-->
+                    <h4 class="card-title shop-item-title">Sommarsalad</h4>
+                    <h5 class="card-title text-end shop-item-price">120 kr</h5>
+                  </div>
+                  <p class="card-text">
+                    This is a wider Card
+                  </p>
+                </div>
+                <div>
+                  <button class="btn btn-success shop-item-button m-3">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section>
         <div class="container">
           <div class="m-3 p-2">
-            <h3 class="col text-center p-3 border-bottom border-warning">Cart</h3>
+            <h3 class="cart-title col text-center p-3">Cart</h3>
             <ul class="cart-items list-group list-group-flush">
               <li class="list-group-item">
                 <div class="cart-row d-inline-flex container-fluid p-2">
@@ -126,7 +169,7 @@
                       <button class=" px-2 btn-success minus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                         <i class="fas fa-minus">-</i>
                       </button>
-                      <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control form-control-sm cart-quantity-input">
+                      <input min="0" name="quantity" value="1" type="number" class="form-control form-control-sm cart-quantity-input">
                       <button class=" px-2 btn-danger plus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                         <i class="fas fa-plus">+</i>
                       </button>
@@ -142,7 +185,7 @@
                     <button class=" px-2 btn-success minus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                       <i class="fas fa-minus">-</i>
                     </button>
-                    <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control form-control-sm cart-quantity-input">
+                    <input min="0" name="quantity" value="1" type="number" class="form-control form-control-sm cart-quantity-input">
                     <button class=" px-2 btn-danger plus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                       <i class="fas fa-plus">+</i>
                     </button>
@@ -197,5 +240,10 @@
         <p class="text-light text-center py-2 pb-3">Copyrigth © 2024</p>
       </div>
     </footer>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

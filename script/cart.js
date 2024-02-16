@@ -37,21 +37,26 @@ function addNewItemToCart(title, price) {
     const cartItems = document.getElementsByClassName('cart-items')[0];
     const cartItem = document.createElement('li');
     cartItem.classList.add('list-group-item');
+    cartItem.classList.add('cart-row');
     let cartRow = `
-    <div class="cart-row d-inline-flex container-fluid p-2">
-    <p class="col cart-item-title mx-3">${title}</p>
-    <div class="col-md-3 col-lg-3 col-xl-3 d-flex mx-3">
-      <button class=" px-2 btn-success minus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-        <i class="fas fa-minus">-</i>
-      </button>
-      <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control form-control-sm cart-quantity-input">
-      <button class=" px-2 btn-danger plus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-        <i class="fas fa-plus">+</i>
-      </button>
-    </div>
-    <p class="col text-center mx-3 cart-item-price">${price}</p>
-    <button class="col btn btn-success cart-button mx-3">Remove</button>
-  </div>`
+    <div class=" container-fluid">
+                  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-1 row-cols-xl-3 py-2">
+                    <div class="row">
+                      <h3 class="col cart-item-title align-bottom pt-4">${title}</h3>
+                      <h4 class="col text-centercart-item-price text-end pt-4">${price}</h4>
+                    </div>
+                    <div class="row-cols-10 my-3 d-flex">
+                      <button class=" px-2 btn-success minus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                        <i class="fas fa-minus">-</i>
+                      </button>
+                      <input min="0" name="quantity" value="1" type="number" class="form-control form-control-sm cart-quantity-input">
+                      <button class=" px-2 btn-danger plus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                        <i class="fas fa-plus">+</i>
+                      </button>
+                    </div>
+                    <button class="row mx-1 btn btn-success cart-button my-3">Remove</button>
+                  </div>
+                </div>`
     cartItem.innerHTML = cartRow;
     cartItems.append(cartItem);
     cartItem.getElementsByClassName('cart-button')[0].addEventListener('click',removeCartItem)
@@ -77,7 +82,7 @@ function ready() {
 function removeCartItem(event)
 {
     var buttonCliked = event.target;
-            buttonCliked.parentElement.remove()
+            buttonCliked.parentElement.parentElement.parentElement.remove()
             updateCartTotal();
 }
 

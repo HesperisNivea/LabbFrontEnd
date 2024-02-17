@@ -32,8 +32,9 @@ height: 100vh;
 }
 
 .main-button {
-    background-color: rgb(163, 183, 84);
+    background-color: #75833c;
     font-weight: 500;
+    padding: 6px;
     color: #f9faf7;
 }
 

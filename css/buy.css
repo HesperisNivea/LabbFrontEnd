@@ -2,6 +2,15 @@
     font-family: 'Merriweather', serif;
 }
 
+button:hover {
+    filter: brightness(90%);
+    color: #F9FAF7;
+}
+.btn:hover {
+    filter: brightness(90%);
+    background-color: #75833c;
+    color: #F9FAF7;
+  }
 .food-category-title{
     border-style: solid;
     border-color: #75833c;
@@ -21,12 +30,12 @@
     border-width: 0 0 3px 0;
 }
 
-.main-button {
-    background-color: #75833c;
-    font-weight: 500;
-    color: #f9faf7;
+.shop-item-button {
+    background-color:#75833c; 
+    border: 5px solid #75833c; 
+    color: #F9FAF7;
+    font-size: 1rem;
 }
-
 .plus-btn {
     background-color:#75833c; 
     border: 5px solid #75833c; 
@@ -51,7 +60,14 @@
 .cart-button {
     background-color:#A0462A; 
     border: 5px solid #A0462A; 
+    color: #F9FAF7;
 }
+
+.cart-button:hover {
+    filter: brightness(90%);
+    background-color:#A0462A; 
+    color: #F9FAF7;
+  }
 
 .btn-purchase{
     background-color:#75833c; 

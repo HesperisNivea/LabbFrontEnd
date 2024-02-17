@@ -19,7 +19,7 @@ function addElementToCart() {
 
 function addToCart(event) {
     const buttonCliked = event.target;
-    let shopItem = buttonCliked.parentElement;
+    let shopItem = buttonCliked.parentElement.parentElement;
     let shopItemTitle = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
     let shopItemPrice = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
 
@@ -88,7 +88,6 @@ function ready() {
 
 function changeItemQuantity(event)
 {
-    //var buttonCliked = event.target;
     updateCartTotal();
 }
 

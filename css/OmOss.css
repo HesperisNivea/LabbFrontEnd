@@ -33,8 +33,21 @@ footer {
     min-height: 350px;
     height: 100%;
     
-    
-    
+}
+
+.contact-info {
+    background-color: #A0462A;
+    color: #F9FAF7;
+}
+
+.historia-col {
+    background-color: #A0462A;
+    color: #F9FAF7;
+}
+
+.eco-col {
+    background-color: #75833c;
+    color: #F9FAF7;
 }
 
 #address ul li {

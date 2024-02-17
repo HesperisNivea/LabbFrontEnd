@@ -38,6 +38,12 @@ height: 100vh;
     color: #f9faf7;
 }
 
+.btn:hover {
+    filter: brightness(90%);
+    background-color: #75833c;
+    color: #F9FAF7;
+  }
+
 @media screen and (max-width: 425px) {
     span.brand-font{
       font-size: 26px;

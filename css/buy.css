@@ -37,6 +37,12 @@ height: 100vh;
     border-width: 0 0 3px 0;
 } 
 
+.total-border {
+    border-style: solid;
+    border-color: #A3B754;
+    border-width: 3px 0 0 0;
+}
+
 .cart-title
 {
     border-style: solid;

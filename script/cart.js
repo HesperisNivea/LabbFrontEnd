@@ -24,12 +24,10 @@ function addToCart(event) {
     let shopItemPrice = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
 
     var cartItems = document.getElementsByClassName('cart-row');
-    
-    
+
     addNewItemToCart(shopItemTitle, shopItemPrice);
     updateCartTotal();
     console.log(shopItemTitle, shopItemPrice);
-    
 }
 
 function addNewItemToCart(title, price) {
@@ -43,7 +41,7 @@ function addNewItemToCart(title, price) {
                   <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-1 row-cols-xl-3 py-2">
                     <div class="row">
                       <h3 class="col cart-item-title align-bottom pt-4">${title}</h3>
-                      <h4 class="col text-centercart-item-price text-end pt-4">${price}</h4>
+                      <h4 class="col cart-item-price text-end pt-4">${price}</h4>
                     </div>
                     <div class="row-cols-10 my-3 d-flex">
                       <button class=" px-2 btn-success minus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
@@ -59,7 +57,9 @@ function addNewItemToCart(title, price) {
                 </div>`
     cartItem.innerHTML = cartRow;
     cartItems.append(cartItem);
-    cartItem.getElementsByClassName('cart-button')[0].addEventListener('click',removeCartItem)
+    cartItem.getElementsByClassName('cart-button')[0].addEventListener('click',removeCartItem);
+    cartItem.getElementsByClassName('minus-btn')[0].addEventListener('click',changeItemQuantity);
+    cartItem.getElementsByClassName('plus-btn')[0].addEventListener('click',changeItemQuantity);
 }
 // add async to script in html
 function ready() {
@@ -75,8 +75,21 @@ function ready() {
     {
         let button = addToCartButtons[i];
         button.addEventListener('click',addToCart)
-        console.log('clicked')
     }
+
+    const updateCartTotal = document.getElementsByClassName('minus-btn');
+    for(let i = 0; i < updateCartTotal.length; i++)
+    {
+        let button = updateCartTotal[i];
+        button.addEventListener('click',changeItemQuantity)
+    }
+    
+}
+
+function changeItemQuantity(event)
+{
+    //var buttonCliked = event.target;
+    updateCartTotal();
 }
 
 function removeCartItem(event)
@@ -94,8 +107,10 @@ function updateCartTotal() {
     for (var i = 0; i< cartRows.length; i++)
     {
         var cartRow = cartRows[i];
-        var priceElement = cartRow.getElementsByClassName('cart-item-price')[0];
-        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
+        var cartRowPriceInfoDiv = cartRow.children[0].children[0].children[0];
+        var cartRowQuantityInfoDiv = cartRow.children[0].children[0].children[1];
+        var priceElement = cartRowPriceInfoDiv.getElementsByClassName('cart-item-price')[0];
+        var quantityElement = cartRowQuantityInfoDiv.getElementsByClassName('cart-quantity-input')[0];
         var price = parseFloat(priceElement.innerText.replace(/kr/g,''));
         var quantitty = quantityElement.value;
         total = total + (price * quantitty);

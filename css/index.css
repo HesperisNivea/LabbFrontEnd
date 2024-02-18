@@ -50,6 +50,24 @@ height: 100vh;
     }
   }
 
+  @media screen and (max-width: 375px) {
+    span.brand-font{
+      font-size: 0px;
+    }
+  }
+
+  @media screen and (max-width: 485px) {
+    .brand-logo-img {
+     width: 55px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .brand-logo-img {
+     width: 60px;
+    }
+  }
+
   @media screen and (max-width: 425px) {
     span.footer-brand-logo {
     font-size: 26px;
@@ -58,7 +76,7 @@ height: 100vh;
 
   @media screen and (max-width: 425px) {
     div.footer-brand-logo-div {
-    padding: 0px;
+    padding: 20px;
   }
   }
 

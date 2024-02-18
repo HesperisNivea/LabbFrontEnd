@@ -21,7 +21,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary py-2">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-2"> <!-- Use media query @media (max-width: 600px) { font-size: 12px; } -->
         <div class="container-md">
           <button
           class="navbar-toggler"
@@ -34,9 +34,9 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-          <a class="navbar-brand" href="./index.html">
+          <a class="navbar-brand " href="./index.html">
             <img
-              src="../Images/salad-svgrepo-com.svg"
+              src="./Images/salad-svgrepo-com.svg"
               alt="Logo"
               width="50"
               height="62"
@@ -56,16 +56,6 @@
                 <li class="nav-item">
                   <a class="nav-link active" href="./Buy.html">Bästell online</a>
                 </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link d-flex">
-                    <img
-                      src="../Images/basket-shopping-basket-svgrepo-com.svg"
-                      alt="Logo"
-                      width="32"
-                      height="30"
-                      class="d-flex align-text-top"
-                    />
-                </li>
               </ul>
             </div>
           </div>
@@ -78,40 +68,6 @@
         <div class="container mt-5">
           <h2 class="food-category-title p-2">Sallader</h2>
           <div class="row row-cols-1 row-cols-md-3 g-4 shop-items" id="salad-container">
-            <div class="col shop-item">
-              <div class="card h-100">
-                <img src="../Images/test.jpg" class="card-img-top shop-item-image" alt="salad" />
-                <div class="card-body">
-                  <div class="d-flex" style="justify-content: space-between;"> <!--remove style and add it to css file-->
-                    <h4 class="card-title shop-item-title">Sommarsalad</h4>
-                    <h5 class="card-title text-end shop-item-price">120 kr</h5>
-                  </div>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <button class="btn btn-success shop-item-button">Add to cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="../Images/test.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This card has supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -119,41 +75,6 @@
         <div class="container mt-5">
           <h2 class="food-category-title p-2">Smoothies</h2>
           <div class="row row-cols-1 row-cols-md-3 g-4 shop-items" id="smoothie-container">
-            
-            <div class="col shop-item">
-              <div class="card h-100">
-                <img src="../Images/smoothies/arvid-skywalker-h6ccJcVHh20-unsplash.jpg" class="card-img-top shop-item-image" alt="salad" />
-                <div class="card-body">
-                  <div class="d-flex" style="justify-content: space-between;"> <!--remove style and add it to css file-->
-                    <h4 class="card-title shop-item-title">Sommarsalad</h4>
-                    <h5 class="card-title text-end shop-item-price">120 kr</h5>
-                  </div>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <button class="btn btn-success shop-item-button">Add to cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="col shop-item">
-              <div class="card h-100">
-                <img src="../Images/smoothies/arvid-skywalker-h6ccJcVHh20-unsplash.jpg" class="card-img-top shop-item-image" alt="salad" />
-                <div class="card-body">
-                  <div class="d-flex" style="justify-content: space-between;"> <!--remove style and add it to css file-->
-                    <h4 class="card-title shop-item-title">Sommarsalad</h4>
-                    <h5 class="card-title text-end shop-item-price">120 kr</h5>
-                  </div>
-                  <p class="card-text">
-                    This is a wider Card
-                  </p>
-                </div>
-                <div>
-                  <button class="btn shop-item-button m-3">Add to cart</button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -196,21 +117,21 @@
         </div>
       </section>
     </main>
-    <footer class="mt-3">
-      <div class="row row-cols-1 row-cols-sm-1 row-cols-xl-3 py-4 px-2">
-        <div class="col-2 mb-3 px-4">
+    <footer class="container-fluid">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-xl-3 py-4 px-3">
+        <div class="footer-brand-logo-div col-2 mb-3 px-2">
           <a class="navbar-brand" href="./index.html">
             <img
-              src="../Images/salad-svgrepo-com-white.svg"
+              src="./Images/salad-svgrepo-com-white.svg"
               alt="Logo"
               width="50"
               height="62"
-              class="d-inline-block me-3"
+              class="d-inline-block me-2"
             />
             <span class="footer-brand-logo align-bottom">Lundens Salladsbar</span>
           </a>
         </div>
-        <div class="col mb-3 ps-5">
+        <div class="col mb-3 ps-1">
           <h5 class="text-light">Kontakt</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Nobelplatsen 5,</a></li>
@@ -219,7 +140,8 @@
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">lundens.salladsbar@sallad.se</a></li>
           </ul>
         </div>
-        <div class="col mb-3 ps-5">
+      
+        <div class="col mb-3 ps-1">
           <h5 class="align-text-center">Öppetider:</h5>
           <ul class="nav flex-column text-">
             <li class="nav-item"><span class="nav-link p-0 text-light mb-2">Mon - Tors : 10:00 - 18:00</span></li>

@@ -44,9 +44,9 @@ height: 100vh;
     color: #F9FAF7;
   }
 
-@media screen and (max-width: 425px) {
+  @media screen and (max-width: 485px) {
     span.brand-font{
-      font-size: 26px;
+      font-size: 27px;
     }
   }
 

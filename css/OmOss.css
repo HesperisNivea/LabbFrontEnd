@@ -75,3 +75,21 @@ text-align: center;
     border: 3px solid;
     border-color: rgb(163, 183, 84, 0.5);
 }
+
+@media screen and (max-width: 485px) {
+    span.brand-font{
+      font-size: 27px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    span.footer-brand-logo {
+    font-size: 26px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    div.footer-brand-logo-div {
+    padding: 0px;
+  }
+  }

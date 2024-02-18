@@ -25,7 +25,7 @@ const salad2 = {
 const salad3 = {
   name:"Wintersallad",
   type:"Wintersallad",
-  ingredients:[ "ris", "salad", "majs", "sås"],
+  ingredients:[ "ris", "salad", "valnötter", "sås"],
   price: "145 kr",
   description: "Vintersallad med sparris, parmesan, valnötter och sallad - en symfoni av smaker. Sparrisen möter den krämiga parmesanosten, valnötterna ger textur, och salladen är som en smakrik skog.", 
   img:"./Images/salads2/carly-jayne-Lv174o7fn7Y-unsplash-winter-salad.jpg"};

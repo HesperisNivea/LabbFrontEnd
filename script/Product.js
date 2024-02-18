@@ -4,7 +4,7 @@ const salad0 = {
   ingredients:[ "ris", "salad", "majs", "sås"],
   price: "139 kr",
   description: "Fräsch och färgglad sommarsallad med pannerost, ägg, krispig sallad, majs, tomat och rödkål",
-  img:'../Images/salads2/anh-nguyen-_Uqj5BQb-mw-unsplash-summer-sallad.jpg'};
+  img:'./Images/salads2/anh-nguyen-_Uqj5BQb-mw-unsplash-summer-sallad.jpg'};
 
 const salad1 = {
 name:"Vårsallad" ,
@@ -12,7 +12,7 @@ type:"Vårsallad",
 ingredients:[ "ris", "salad", "majs", "sås"],
 price: "139 kr",
 description: "Vårsallad med ris, sesam, lax, svamp, morot och bananlöv. En hälsosam och smakrik kombination!",
-img:'../Images/salads2/jonathan-borba-Gkc_xM3VY34-unsplash-spring-salad.jpg'};
+img:'./Images/salads2/jonathan-borba-Gkc_xM3VY34-unsplash-spring-salad.jpg'};
 
 const salad2 = {
   name:"Höstsalad",

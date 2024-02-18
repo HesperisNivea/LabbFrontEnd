@@ -60,7 +60,7 @@ function addNewItemToCart(title, price) {
                         <i class="fas fa-plus">+</i>
                       </button>
                     </div>
-                    <button class="row mx-1 btn btn-success cart-button my-3">Remove</button>
+                    <button class="row mx-1 btn btn-success cart-button my-3">Ta Bort</button>
                   </div>
                 </div>`
     cartItem.innerHTML = cartRow;

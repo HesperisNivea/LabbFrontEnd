@@ -54,7 +54,7 @@
                   <a class="nav-link active" href="./omOss.html">Om oss</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="./Buy.html">Bästell online</a>
+                  <a class="nav-link active" href="./Buy.html">Beställ online</a>
                 </li>
               </ul>
             </div>
@@ -81,35 +81,16 @@
       <section>
         <div class="container">
           <div class="m-2 p-2">
-            <h3 class="cart-title col text-center p-3">Cart</h3>
+            <h3 class="cart-title col text-center p-3">Varukorg</h3>
             <ul class="cart-items list-group list-group-flush">
-              <li  class="list-group-item cart-row">
-                <div class=" container-fluid">
-                  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-1 row-cols-xl-3 py-2">
-                    <div class="row">
-                      <h3 class="col cart-item-title align-bottom pt-4">Sommarsalad</h3>
-                      <h4 class="col cart-item-price text-end pt-4">140kr</h4>
-                    </div>
-                    <div class="row-cols-10 my-3 d-flex">
-                      <button class=" px-2 btn-success minus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                        <i class="fas fa-minus">-</i>
-                      </button>
-                      <input min="0" name="quantity" value="1" type="number" class="form-control form-control-sm cart-quantity-input">
-                      <button class=" px-2 btn-danger plus-btn" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                        <i class="fas fa-plus">+</i>
-                      </button>
-                    </div>
-                    <button class="row ms-1 p-2 btn cart-button my-3">Remove</button>
-                  </div>
-                </div>
-              </li>
+              
             </ul>
             <div class="container d-inline-flex justify-content-end total-border" >
               <div class="m-2 p-2">
                 <div class="row d-flex p-3 ">
                   <h4 class="col pe-5 me-2">Total:</h4>
                   <h4 class="col cart-total-price text-end" style="min-width: 200px;"> 0 kr</h4> <!-- move to style-->
-                  <button class="btn p-2 mt-3 btn-purchase">Purchase</button>
+                  <button class="btn p-2 mt-3 btn-purchase">Köp</button>
                 </div>
               </div>
             </div>

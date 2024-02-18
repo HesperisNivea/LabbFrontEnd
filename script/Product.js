@@ -56,7 +56,7 @@ for (const salad of saladList) {
                   </p>
                 </div>
                 <div>
-                  <button class="btn shop-item-button m-3">Add to cart</button>
+                  <button class="btn shop-item-button m-3">Lägg till</button>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@ const smoothie2 = {
                     </p>
                   </div>
                   <div>
-                    <button class="btn shop-item-button m-3">Add to cart</button>
+                    <button class="btn shop-item-button m-3">Lägg till</button>
                   </div>
                 </div>
               </div>

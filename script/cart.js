@@ -33,6 +33,14 @@ function addToCart(event) {
 function addNewItemToCart(title, price) {
 
     const cartItems = document.getElementsByClassName('cart-items')[0];
+
+    const cartItemTitles = cartItems.getElementsByClassName('cart-item-title');
+    for(let i = 0;i < cartItemTitles.length; i++ ) {
+        if(cartItemTitles[i].innerText == title) {
+            alert("Denna vara finns redan i varukorgen");
+            return;
+        }
+    }
     const cartItem = document.createElement('li');
     cartItem.classList.add('list-group-item');
     cartItem.classList.add('cart-row');
@@ -64,9 +72,9 @@ function addNewItemToCart(title, price) {
 // add async to script in html
 function ready() {
     
-    var removeCartItemButtons = document.getElementsByClassName('cart-button');
-    for (var i = 0; i< removeCartItemButtons.length; i++) {
-        var button = removeCartItemButtons[i];
+    const removeCartItemButtons = document.getElementsByClassName('cart-button');
+    for (let i = 0; i< removeCartItemButtons.length; i++) {
+        let button = removeCartItemButtons[i];
         button.addEventListener('click', removeCartItem)
     }   
 
@@ -84,6 +92,8 @@ function ready() {
         button.addEventListener('click',changeItemQuantity)
     }
     
+    const removeAllCartItemsButton = document.getElementsByClassName('btn-purchase')[0];
+    removeAllCartItemsButton.addEventListener('click',removeAllCartItems)
 }
 
 function changeItemQuantity(event)
@@ -96,6 +106,18 @@ function removeCartItem(event)
     var buttonCliked = event.target;
             buttonCliked.parentElement.parentElement.parentElement.remove()
             updateCartTotal();
+}
+
+function removeAllCartItems(event) {
+    const cartItemContainer = document.getElementsByClassName('cart-items')[0];
+    const cartItems = cartItemContainer.children;
+    alert("Tack för beställningen!");
+
+    for(let i = cartItems.length - 1; i >= 0; i--) {
+        cartItems[i].remove();
+    }
+
+    updateCartTotal();
 }
 
 function updateCartTotal() {

@@ -43,11 +43,22 @@ footer {
 .historia-col {
     background-color: #A0462A;
     color: #F9FAF7;
+    text-align: center;
+}
+
+.historia-col p {
+    max-width: 600px;
+    margin: auto;
 }
 
 .eco-col {
     background-color: #75833c;
     color: #F9FAF7;
+}
+
+.eco-col p {
+    max-width: 600px;
+    margin: auto;
 }
 
 #address ul li {
